@@ -2,7 +2,7 @@ USE Normalization1;
 DROP TABLE IF EXISTS seeking1;
 
 ALTER TABLE my_contacts
-    ADD COLUMN seeking1 VARCHAR (25);
+    ADD COLUMN seeking1 VARCHAR (100);
 
 UPDATE my_contacts
 	SET my_contacts.seeking1 = SUBSTRING_INDEX(seeking, ',' , 1)
@@ -11,7 +11,7 @@ UPDATE my_contacts
 
 
 ALTER TABLE my_contacts
-    ADD COLUMN seeking2 VARCHAR (25);
+    ADD COLUMN seeking2 VARCHAR (100);
 
 UPDATE my_contacts
 	SET my_contacts.seeking2 = RIGHT(seeking, length(seeking)-length(my_contacts.seeking)-1)

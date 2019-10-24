@@ -1,0 +1,7 @@
+email: not done
+gender: working
+profession: not done
+location: working, but used incorrect (not normalized) table design
+status: working, poor choice for primary key field name
+interests: working, but incomplete, not properly designed, no join table
+seeking: working, but incomplete, not properly designed, no join table

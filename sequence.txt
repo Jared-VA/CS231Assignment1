@@ -1,0 +1,6 @@
+contacts.sql
+create_gender.sql
+create_location.sql
+create status.sql
+create_interests.sql
+create_seeking.sql
